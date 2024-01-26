@@ -1,0 +1,106 @@
+/* Base Styles */body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafc;
+    color: #35495e;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* Container */
+.container {
+    max-width: 780px; /* Slightly reduced width */
+    margin: 60px auto;
+    padding: 35px; /* Reduced padding */
+    background: #fff;
+    border-radius: 20px; /* Adjusted border-radius */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid #ebeef5;
+}
+
+/* Heading */
+h2 {
+    font-size: 34px; /* Slightly reduced font size */
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* User Details */
+.user-details p {
+    margin: 0;
+    padding: 14px 18px; /* Adjusted padding */
+    border-bottom: 1px solid #e2e6ea;
+    font-size: 16px; /* Adjusted font size */
+    color: #50596b;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.user-details p:hover {
+    background-color: #f5f7fa;
+    padding-left: 22px; /* Adjusted hover padding */
+}
+
+.user-details p span {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.user-details p:last-child {
+    border-bottom: none;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 14px 28px; /* Slightly reduced padding */
+    font-size: 17px; /* Adjusted font size */
+    font-weight: 600;
+    border: none;
+    border-radius: 12px; /* Adjusted border-radius */
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+    margin-top: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.back-button:hover {
+    background-color: #16a085;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 25px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .user-details p {
+        padding: 12px 15px;
+    }
+
+    .back-button {
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+

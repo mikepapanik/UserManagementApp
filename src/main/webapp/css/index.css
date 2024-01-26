@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #4c51bf;
+    --primary-hover-color: #667eea;
+    --background-color: #edf2f7;
+    --text-color: #1a202c;
+    --container-bg-color: #fff;
+    --button-text-color: #f7fafc;
+    --button-shadow: rgba(108, 99, 255, .25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="#edf2f7"/><path d="M0 25L25 0M75 100L100 75M25 100L100 25M0 75L75 0" stroke="#ddd" stroke-width="2"/></svg>');
+}
+
+.container {
+    background: var(--container-bg-color);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px var(--button-shadow);
+}
+
+h1 {
+    color: var(--text-color);
+    margin-bottom: 24px;
+    font-size: 2.4em;
+    font-weight: 500;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    color: var(--button-text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover-color) 100%);
+    box-shadow: 0 3px 6px var(--button-shadow);
+    position: relative; /* For icon positioning */
+}
+
+a:hover, a:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px var(--button-shadow);
+}
+
+a .fas { /* Font Awesome icons */
+    margin-right: 8px;
+    position: relative;
+    top: 1px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 35px 15px;
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
